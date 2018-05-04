@@ -55,7 +55,6 @@ public class LeafMaker implements PMimic, PConstants {
 		this.pleaves = pleaves;
 		float pivotX = image.width/3f;
 		float pivotY = image.height/2f;
-		System.out.println(pivotX + " " + pivotY);
 		leafBrush = new LeafEntity(image, 500, 500, 1, pivotX, pivotY, 0, 0, 0, 0, 0, 0);
 		leafsToAdd = new ArrayList<>();
 	}
@@ -159,8 +158,6 @@ public class LeafMaker implements PMimic, PConstants {
 		int x = event.getX();
 		int y = event.getY();
     	if(event.getAction() == MouseEvent.CLICK && event.getButton() == RIGHT) {
-    		System.out.println("Hi " + leafsToAdd.size());
-    		
             while(undoPointer < leafsToAdd.size() && leafsToAdd.get(undoPointer) != null) {
             	leafsToAdd.remove(undoPointer);
             }

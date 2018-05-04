@@ -237,7 +237,6 @@ public class LeafMakerGUI implements PMimic, PConstants {
 			float sliderValue = event.getValue();
 			float angle;
 			if(pointAwayToggle.getBooleanValue() == false) {
-				System.out.println(String.format("%s",false));
 				angle = atan2(followTarget.y - pointer_y, followTarget.x - pointer_x);
 			} else {
 				angle = atan2(pointer_y - followTarget.y, pointer_x - followTarget.x);
@@ -310,7 +309,6 @@ public class LeafMakerGUI implements PMimic, PConstants {
 				float sliderValue = rotationSlider.getValue();
 				float angle;
 				if(pointAwayToggle.getBooleanValue() == false) {
-					System.out.println(String.format("%s",false));
 					angle = atan2(followTarget.y - pointer_y, followTarget.x - pointer_x);
 				} else {
 					angle = atan2(pointer_y - followTarget.y, pointer_x - followTarget.x);
@@ -377,7 +375,6 @@ public class LeafMakerGUI implements PMimic, PConstants {
 		sizeSlider.setValue(mainSlidersMemory.get(sizeSlider.getName()));
 	}
 	public void randomizeMainSliders() {
-		System.out.println(enableRandomizeToggle.hashCode() + "  "  + enableRandomizeToggle.getValue());
 		if(enableRandomizeToggle.getBooleanValue() == true) {
 			System.out.println("Randomizing");
 			//save current values to restore at the end of this call

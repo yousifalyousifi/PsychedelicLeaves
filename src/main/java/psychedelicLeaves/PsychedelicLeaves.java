@@ -124,13 +124,8 @@ public class PsychedelicLeaves implements CallbackListener, PMimic {
 	float[] pastValues = new float[2];
 	public void globalPull(ControlEvent event) {
 		float e = 1 + 1f * event.getValue() / 100;
-		System.out.println(e);
 		globalSwingRateFactor.setValue(pastValues[0] * e);
 		globalSwingRangeFactor.setValue(pastValues[1] * e);
-		System.out.println();
-		System.out.println(e);
-		System.out.println(pastValues[0] * e);
-		System.out.println(pastValues[1] * e);
 	}
 
 	@Override
@@ -142,12 +137,8 @@ public class PsychedelicLeaves implements CallbackListener, PMimic {
 			}
 		} else if(e.getAction() == ControlP5.ACTION_PRESS) {
 			if(e.getController().getName() == "globalPull") {
-				System.out.println();
-				System.out.println("pull");
 				pastValues[0] = globalSwingRateFactor.getValue();
 				pastValues[1] = globalSwingRangeFactor.getValue();
-				System.out.println(globalSwingRateFactor.getValue());
-				System.out.println(pastValues[1]);
 				globalPull.setBroadcast(false).setValue(0).setBroadcast(true);
 			}
 		}
@@ -206,7 +197,7 @@ public class PsychedelicLeaves implements CallbackListener, PMimic {
 			System.out.println("Saving");
 			saveLeavesToFile(leafEntities);
 		} else if (event.getKey() == 'q' && event.getAction() == KeyEvent.RELEASE) {
-			System.out.println("loading");
+			System.out.println("Loading");
 			loadLeavesFile("data/leaves_04-28-2018_01-10-25.txt", leafImage);
 		} else if (event.getKey() == 'z' && event.getAction() == KeyEvent.TYPE) {
 			System.out.println("Undo");
