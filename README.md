@@ -8,7 +8,8 @@ It was initially inspired by [TotalBabyCake's Madeleine Pattern](https://society
 <a href="http://you-sif.com/demos/leaves_original_square.html"><img src="http://you-sif.com/demos/leaves_original.png" width="200"></a>
 
 
-### Arctic Ombre
+### [Arctic Ombre](https://society6.com/product/arctic-ombre_print)
+Also by TotalBabyCakes
 
 <a href="http://you-sif.com/demos/arctic_ombre_square.mp4"><img src="http://you-sif.com/demos/arctic_ombre_s.png" width="200"></a>
 
