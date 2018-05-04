@@ -5,7 +5,7 @@ It was initially inspired by [TotalBabyCake's Madeleine Pattern](https://society
 
 ### Madeleine Pattern
 
-<a href="http://you-sif.com/demos/leaves_original_square.html"><img src="http://you-sif.com/demos/leaves_original_s.png" width="200"></a>
+<a href="http://you-sif.com/demos/leaves_original_square.html"><img src="http://you-sif.com/demos/leaves_original.png" width="200"></a>
 
 
 ### Arctic Ombre
