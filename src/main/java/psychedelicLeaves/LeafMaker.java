@@ -128,7 +128,7 @@ public class LeafMaker implements PMimic, PConstants {
 				leafBrush.setTurnRate(turnRate * turnRateFactor);
 			} else if(currentState == State.ROTATION) {
 				float angle = atan2(pointerY-leafBrush.locY, pointerX-leafBrush.locX);
-				leafBrush.setRotation(angle - PI/2);
+				leafBrush.setRotation(angle);
 			} else if(currentState == State.SWINGRANGE) {
 				float swingRange = sqrt(pow(pointerX - settingOrigin.x, 2) + pow(pointerY - settingOrigin.y, 2));
 				float swingRangeFactor = 0.01f;
